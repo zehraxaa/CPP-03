@@ -1,39 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   ScavTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aaydogdu <aaydogdu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/02 16:21:42 by aaydogdu          #+#    #+#             */
-/*   Updated: 2026/02/04 22:59:06 by aaydogdu         ###   ########.fr       */
+/*   Created: 2026/02/04 23:00:34 by aaydogdu          #+#    #+#             */
+/*   Updated: 2026/02/05 00:00:00 by aaydogdu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef SCAVTRAP_HPP
+# define SCAVTRAP_HPP
+
 #include "ClapTrap.hpp"
+#include <iostream>
 
-int main()
+class ScavTrap : public ClapTrap
 {
-	ClapTrap a("Hande");
-	ClapTrap b("Sevda");
-	
-	std::cout<<std::endl;
+	private:
+			
+};
 
-	a.setAttackDmg(5);
-	b.setAttackDmg(5);
-	a.attack("Sevda");
-	b.takeDamage(a.getAttackDmg());
-	a.beRepaired(10);
-	a.takeDamage(5);
-	a.attack("Sevda");
-	b.takeDamage(5);
-	b.attack("Hande");
-	a.takeDamage(10);
-	a.beRepaired(10);
-	a.attack("Sevda");
-	a.beRepaired(0);
-
-	
-	std::cout<<std::endl;
-	return 0;
-}
+#endif
