@@ -6,17 +6,17 @@
 /*   By: aaydogdu <aaydogdu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/06 13:44:14 by aaydogdu          #+#    #+#             */
-/*   Updated: 2026/02/07 00:37:32 by aaydogdu         ###   ########.fr       */
+/*   Updated: 2026/02/06 23:23:29 by aaydogdu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ScavTrap.hpp"
 #include "ClapTrap.hpp"
 
-ScavTrap::ScavTrap(void) : ClapTrap()
+ScavTrap::ScavTrap() : ClapTrap()
 {
 	std::cout<<"ScavTrap default constructor called"<<std::endl;
-	//this->name = "Anonymous";
+	this->name = "Anonymous";
 	this->hitPts = 100;
 	this->energyPts = 50;
 	this->attackDmg = 20;
@@ -42,7 +42,7 @@ ScavTrap::ScavTrap(const ScavTrap &other) : ClapTrap(other)
 
 ScavTrap& ScavTrap::operator=(const ScavTrap &other)
 {
-	std::cout<<"ScavTrap copy assignment operator called"<<std::endl;
+	std::cout<<"ScavTrap compy assignment operator called"<<std::endl;
 	if (this != &other)
 	{
 		ClapTrap::operator=(other);
@@ -57,7 +57,7 @@ ScavTrap::~ScavTrap()
 
 void ScavTrap::guardGate()
 {
-	std::cout<<"ScavTrap "<<name<<" is now in Gate keeper mode"<<std::endl;
+	std::cout<<" ScavTrap "<<name<<" is now in Gate keeper mode"<<std::endl;
 }
 
 void	ScavTrap::attack(const std::string& target)
