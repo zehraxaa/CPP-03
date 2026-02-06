@@ -6,7 +6,7 @@
 /*   By: aaydogdu <aaydogdu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/01 22:47:35 by aaydogdu          #+#    #+#             */
-/*   Updated: 2026/02/07 00:22:15 by aaydogdu         ###   ########.fr       */
+/*   Updated: 2026/02/07 00:49:13 by aaydogdu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,21 +99,18 @@ void ClapTrap::takeDamage(unsigned int amount)
 		std::cout<<"("<<name<<")"<<" Energy Points: "<<energyPts<<", Hit Points: "<<hitPts<<std::endl;
 		return ;
 	}
+	std::cout<<name<<" takes "<<amount<<" points of damage"<<std::endl;
+	
 	if (hitPts >= amount)
-	{
 		hitPts -= amount;
-		std::cout<<name<<" takes "<<amount<<" points of damage"<<std::endl;
-		std::cout<<"("<<name<<")"<<" Energy Points: "<<energyPts<<", Hit Points: "<<hitPts<<std::endl;
-	}
+	
 	else if (hitPts < amount)
 		hitPts = 0;
 	
 	if (hitPts == 0 )
-	{
 		std::cout<<name<<" dies cause "<<amount<<" points of damage!"<<std::endl;
-		std::cout<<"("<<name<<")"<<" Energy Points: "<<energyPts<<", Hit Points: "<<hitPts<<std::endl;
-		return ;
-	}
+	
+	std::cout<<"("<<name<<")"<<" Energy Points: "<<energyPts<<", Hit Points: "<<hitPts<<std::endl;
 }
 
 void ClapTrap::beRepaired(unsigned int amount)
