@@ -6,7 +6,7 @@
 /*   By: aaydogdu <aaydogdu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/01 22:36:33 by aaydogdu          #+#    #+#             */
-/*   Updated: 2026/02/05 00:01:23 by aaydogdu         ###   ########.fr       */
+/*   Updated: 2026/02/06 23:31:26 by aaydogdu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ class ClapTrap
 		ClapTrap(void); //default
 		ClapTrap(const ClapTrap &other); //copy const.
 		ClapTrap& operator=(const ClapTrap &other);
-		virtual ~ClapTrap();
+		virtual ~ClapTrap(); //virtual olarak da tanımlayıp bir dene
 		
 		ClapTrap(std::string name);
 		std::string getName();
@@ -38,7 +38,8 @@ class ClapTrap
 		void	setEnergyPts(unsigned int ePts);
 		int		getHitPts();
 		void	setHitPts(unsigned int hPts);
-		void	attack(const std::string& target);
+		
+		virtual void	attack(const std::string& target);
 		void	takeDamage(unsigned int amount);
 		void	beRepaired(unsigned int amount);
 };

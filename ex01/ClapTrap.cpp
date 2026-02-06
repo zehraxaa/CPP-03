@@ -6,7 +6,7 @@
 /*   By: aaydogdu <aaydogdu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/01 22:47:35 by aaydogdu          #+#    #+#             */
-/*   Updated: 2026/02/04 22:47:35 by aaydogdu         ###   ########.fr       */
+/*   Updated: 2026/02/06 23:31:43 by aaydogdu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 ClapTrap::ClapTrap(void)
 {
-	std::cout<<"Default constructor called"<<std::endl;
+	std::cout<<"ClapTrap default constructor called"<<std::endl;
 	this->name = "Anonymous";
 	this->energyPts = 10; //repair yapmak ve attack-1 enerji
 	this->hitPts = 10;
@@ -23,7 +23,7 @@ ClapTrap::ClapTrap(void)
 
 ClapTrap::ClapTrap(const ClapTrap &other)
 {
-	std::cout<<"Copy constructor called"<<std::endl;
+	std::cout<<"ClapTrap copy constructor called"<<std::endl;
 	this->name = other.name;
 	this->hitPts = other.hitPts;
 	this->energyPts = other.energyPts;
@@ -32,7 +32,7 @@ ClapTrap::ClapTrap(const ClapTrap &other)
 
 ClapTrap& ClapTrap::operator=(const ClapTrap &other)
 {
-	std::cout<<"Copy assignment operator called"<<std::endl;
+	std::cout<<"ClapTrap copy assignment operator called"<<std::endl;
 	if (this != &other)
 	{
 		this->name = other.name;
@@ -45,12 +45,12 @@ ClapTrap& ClapTrap::operator=(const ClapTrap &other)
 
 ClapTrap::~ClapTrap()
 {
-	std::cout<<"Destructor called"<<std::endl;
+	std::cout<<"ClapTrap destructor called"<<std::endl;
 }
 
 ClapTrap::ClapTrap(std::string name)
 {
-	std::cout<<"Constructor called"<<std::endl;
+	std::cout<<"ClapTrap name constructor called"<<std::endl;
 	this->name = name;
 	this->energyPts = 10;
 	this->hitPts = 10;
@@ -132,11 +132,6 @@ void ClapTrap::beRepaired(unsigned int amount)
 	}
 	else {
 		std::cout<<name<<" has low energy point to repair."<<" Sorry, but you're gonna die :("<<std::endl;
-		//std::cout<<"("<<name<<")"<<" Energy Points: "<<energyPts<<", Hit Points: "<<hitPts<<std::endl;
-		//return ;
 	}
-	//?? bu kontrol olmalı mı olmamalı mı? setterların içinde de yapmalı mıyım?
-	//if (hitPts > 10)
-		//hitPts = 10;
 	std::cout<<"("<<name<<")"<<" Energy Points: "<<energyPts<<", Hit Points: "<<hitPts<<std::endl;
 }
