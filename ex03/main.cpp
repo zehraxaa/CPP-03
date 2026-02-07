@@ -6,7 +6,7 @@
 /*   By: aaydogdu <aaydogdu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/06 14:27:46 by aaydogdu          #+#    #+#             */
-/*   Updated: 2026/02/07 12:37:49 by aaydogdu         ###   ########.fr       */
+/*   Updated: 2026/02/07 14:02:19 by aaydogdu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,13 @@ int main()
 	a.whoAmI();
 	b.whoAmI();
 	c.whoAmI();
-
+	
+	std::cout<<std::endl;
+	std::cout<<std::endl;
+	
 	a.attack("Monster");
 	b.takeDamage(30);
 
+	std::cout<<std::endl;
+	
 }

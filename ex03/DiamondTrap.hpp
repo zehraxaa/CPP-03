@@ -6,7 +6,7 @@
 /*   By: aaydogdu <aaydogdu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/07 10:06:48 by aaydogdu          #+#    #+#             */
-/*   Updated: 2026/02/07 12:59:02 by aaydogdu         ###   ########.fr       */
+/*   Updated: 2026/02/07 14:24:30 by aaydogdu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,11 @@
 
 #include "FragTrap.hpp"
 #include "ScavTrap.hpp"
-#include "ClapTrap.hpp"
 
 class DiamondTrap : public ScavTrap, public FragTrap
 {
 	private:
-		std::string name; //diamondtrapin kendine ait bir ismi olsunmuş
+		std::string name;
 	public:
 		DiamondTrap();
 		DiamondTrap(std::string name);
