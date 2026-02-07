@@ -12,7 +12,7 @@
 
 #include "DiamondTrap.hpp"
 
-DiamondTrap::DiamondTrap() : ClapTrap(), FragTrap(), ScavTrap()
+DiamondTrap::DiamondTrap() : ClapTrap(), ScavTrap(), FragTrap()
 {
 	std::cout<<"DiamondTrap default constructor called"<<std::endl;
 	this->name = "Anonymous DiamondTrap";
@@ -23,7 +23,7 @@ DiamondTrap::DiamondTrap() : ClapTrap(), FragTrap(), ScavTrap()
 }
 
 DiamondTrap::DiamondTrap(std::string name) 
-	: ClapTrap(name + "_clap_name"), FragTrap(name), ScavTrap(name)
+	: ClapTrap(name + "_clap_name"), ScavTrap(name), FragTrap(name)
 {
 	std::cout<<"DiamondTrap normal constructor called"<<std::endl;
 	this->name = name;
@@ -35,7 +35,7 @@ DiamondTrap::DiamondTrap(std::string name)
 }
 
 DiamondTrap::DiamondTrap(const DiamondTrap &other)
-	: ClapTrap(other), FragTrap(other), ScavTrap(other)
+	: ClapTrap(other), ScavTrap(other), FragTrap(other)
 {
 	this->name = other.name;
 	this->ClapTrap::name = other.ClapTrap::name;
