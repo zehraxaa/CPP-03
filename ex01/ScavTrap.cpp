@@ -6,12 +6,11 @@
 /*   By: aaydogdu <aaydogdu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/06 13:44:14 by aaydogdu          #+#    #+#             */
-/*   Updated: 2026/02/07 00:37:32 by aaydogdu         ###   ########.fr       */
+/*   Updated: 2026/02/07 10:13:08 by aaydogdu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ScavTrap.hpp"
-#include "ClapTrap.hpp"
 
 ScavTrap::ScavTrap(void) : ClapTrap()
 {
