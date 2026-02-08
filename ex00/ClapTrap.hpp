@@ -6,7 +6,7 @@
 /*   By: aaydogdu <aaydogdu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/01 22:36:33 by aaydogdu          #+#    #+#             */
-/*   Updated: 2026/02/02 18:46:26 by aaydogdu         ###   ########.fr       */
+/*   Updated: 2026/02/07 14:57:29 by aaydogdu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,13 +19,13 @@
 class ClapTrap 
 {
 	private:
-		std::string name;
+		std::string		name;
 		unsigned int	hitPts;
 		unsigned int	energyPts;
 		unsigned int	attackDmg;
 	public:
-		ClapTrap(void); //default
-		ClapTrap(const ClapTrap &other); //copy const.
+		ClapTrap(void);
+		ClapTrap(const ClapTrap &other);
 		ClapTrap& operator=(const ClapTrap &other);
 		~ClapTrap();
 		

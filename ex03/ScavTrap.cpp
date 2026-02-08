@@ -6,7 +6,7 @@
 /*   By: aaydogdu <aaydogdu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/06 13:44:14 by aaydogdu          #+#    #+#             */
-/*   Updated: 2026/02/07 10:12:32 by aaydogdu         ###   ########.fr       */
+/*   Updated: 2026/02/07 15:26:58 by aaydogdu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,7 @@ ScavTrap::~ScavTrap()
 
 void ScavTrap::guardGate()
 {
-	std::cout<<" ScavTrap "<<name<<" is now in Gate keeper mode"<<std::endl;
+	std::cout<<"ScavTrap "<<name<<" is now in Gate keeper mode"<<std::endl;
 }
 
 void	ScavTrap::attack(const std::string& target)

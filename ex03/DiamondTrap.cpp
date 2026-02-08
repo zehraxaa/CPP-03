@@ -6,7 +6,7 @@
 /*   By: aaydogdu <aaydogdu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/07 10:08:14 by aaydogdu          #+#    #+#             */
-/*   Updated: 2026/02/07 14:01:01 by aaydogdu         ###   ########.fr       */
+/*   Updated: 2026/02/08 16:13:27 by aaydogdu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,22 +17,22 @@ DiamondTrap::DiamondTrap() : ClapTrap(), ScavTrap(), FragTrap()
 	std::cout<<"DiamondTrap default constructor called"<<std::endl;
 	this->name = "Anonymous DiamondTrap";
 	ClapTrap::name = this->name + "_clap_name";
-	this->hitPts = 100;
+	this->hitPts = FragTrap::hitPts;
 	this->energyPts = 50;
-	this->attackDmg = 30;
+	this->attackDmg = FragTrap::attackDmg;
 }
 
 DiamondTrap::DiamondTrap(std::string name) 
-	: ClapTrap(name + "_clap_name"), ScavTrap(name), FragTrap(name)
+	: ClapTrap(name + "_clap_name") , ScavTrap(), FragTrap()
 {
 	std::cout<<"DiamondTrap normal constructor called"<<std::endl;
 	this->name = name;
 	ClapTrap::name = this->name + "_clap_name";
 	this->hitPts = FragTrap::hitPts;
-	this->energyPts = ScavTrap::energyPts;
+	this->energyPts = 50;
 	this->attackDmg = FragTrap::attackDmg;
-	std::cout<<this->attackDmg<<std::endl;
 }
+
 
 DiamondTrap::DiamondTrap(const DiamondTrap &other)
 	: ClapTrap(other), ScavTrap(other), FragTrap(other)

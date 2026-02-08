@@ -6,7 +6,7 @@
 /*   By: aaydogdu <aaydogdu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/07 00:02:58 by aaydogdu          #+#    #+#             */
-/*   Updated: 2026/02/07 10:51:18 by aaydogdu         ###   ########.fr       */
+/*   Updated: 2026/02/07 16:13:08 by aaydogdu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 #include "ScavTrap.hpp"
 #include "ClapTrap.hpp"
 
-class FragTrap : virtual public ClapTrap //sahip çıkalım dedeye
+class FragTrap :  public virtual ClapTrap
 {
 	public:
 		FragTrap();

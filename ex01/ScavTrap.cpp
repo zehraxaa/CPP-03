@@ -6,7 +6,7 @@
 /*   By: aaydogdu <aaydogdu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/06 13:44:14 by aaydogdu          #+#    #+#             */
-/*   Updated: 2026/02/07 10:13:08 by aaydogdu         ###   ########.fr       */
+/*   Updated: 2026/02/07 14:31:37 by aaydogdu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 ScavTrap::ScavTrap(void) : ClapTrap()
 {
 	std::cout<<"ScavTrap default constructor called"<<std::endl;
-	//this->name = "Anonymous";
 	this->hitPts = 100;
 	this->energyPts = 50;
 	this->attackDmg = 20;

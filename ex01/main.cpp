@@ -6,7 +6,7 @@
 /*   By: aaydogdu <aaydogdu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/06 14:27:46 by aaydogdu          #+#    #+#             */
-/*   Updated: 2026/02/07 00:34:39 by aaydogdu         ###   ########.fr       */
+/*   Updated: 2026/02/07 14:31:45 by aaydogdu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,6 @@ int main()
 {
 	ClapTrap* obj1 = new ScavTrap("Fatih Sultan Mehmet");
 	ScavTrap obj2("Bizans Ordusu");
-
-	ScavTrap obj3;
-	std::cout<<obj3.getName()<<std::endl;
 	
 	obj1->attack("Bizans Ordusu");
 	obj2.takeDamage(20);

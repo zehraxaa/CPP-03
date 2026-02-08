@@ -6,7 +6,7 @@
 /*   By: aaydogdu <aaydogdu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/01 22:47:35 by aaydogdu          #+#    #+#             */
-/*   Updated: 2026/02/07 00:49:25 by aaydogdu         ###   ########.fr       */
+/*   Updated: 2026/02/07 14:59:07 by aaydogdu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ ClapTrap::ClapTrap(void)
 {
 	std::cout<<"Default constructor called"<<std::endl;
 	this->name = "Anonymous";
-	this->energyPts = 10; //repair yapmak ve attack-1 enerji
+	this->energyPts = 10;
 	this->hitPts = 10;
 	this->attackDmg = 0;
 }
@@ -129,11 +129,6 @@ void ClapTrap::beRepaired(unsigned int amount)
 	}
 	else {
 		std::cout<<name<<" has low energy point to repair."<<" Sorry, but you're gonna die :("<<std::endl;
-		//std::cout<<"("<<name<<")"<<" Energy Points: "<<energyPts<<", Hit Points: "<<hitPts<<std::endl;
-		//return ;
 	}
-	//?? bu kontrol olmalı mı olmamalı mı? setterların içinde de yapmalı mıyım?
-	//if (hitPts > 10)
-		//hitPts = 10;
 	std::cout<<"("<<name<<")"<<" Energy Points: "<<energyPts<<", Hit Points: "<<hitPts<<std::endl;
 }
